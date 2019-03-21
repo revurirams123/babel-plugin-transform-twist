@@ -1,4 +1,9 @@
 {
-    "presets": [ "react", "env" ],
-    "plugins": [ "../src/index.js" ]
+    "presets": [
+        "@babel/preset-react",
+        "@babel/preset-env"
+    ],
+    "plugins": [
+        "../src/index.js"
+    ]
 }

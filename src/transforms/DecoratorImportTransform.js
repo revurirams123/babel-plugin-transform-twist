@@ -12,7 +12,7 @@
  */
 
 const PathUtils = require('../PathUtils');
-const t = require('babel-types');
+const t = require('@babel/types');
 
 module.exports = class DecoratorImporter {
 

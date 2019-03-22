@@ -15,7 +15,7 @@ const fs = require('fs');
 const path = require('path');
 const babylon = require('babylon');
 const recast = require('recast');
-const { transform } = require('babel-core');
+const { transform } = require('@babel/core');
 
 module.exports = class Transformer {
 
@@ -52,17 +52,17 @@ module.exports = class Transformer {
         };
 
         this.babelPlugins = [
-            require('babel-plugin-syntax-async-generators'),
-            require('babel-plugin-syntax-class-properties'),
-            require('babel-plugin-syntax-decorators'),
-            require('babel-plugin-syntax-do-expressions'),
-            require('babel-plugin-syntax-dynamic-import'),
-            require('babel-plugin-syntax-export-extensions'),
-            require('babel-plugin-syntax-flow'),
-            require('babel-plugin-syntax-function-bind'),
-            require('babel-plugin-syntax-function-sent'),
-            require('babel-plugin-syntax-jsx'),
-            require('babel-plugin-syntax-object-rest-spread'),
+            require('@babel/plugin-syntax-async-generators'),
+            require('@babel/plugin-syntax-class-properties'),
+            require('@babel/plugin-syntax-decorators'),
+            require('@babel/plugin-syntax-do-expressions'),
+            require('@babel/plugin-syntax-dynamic-import'),
+            require('@babel/plugin-syntax-export-extensions'),
+            require('@babel/plugin-syntax-flow'),
+            require('@babel/plugin-syntax-function-bind'),
+            require('@babel/plugin-syntax-function-sent'),
+            require('@babel/plugin-syntax-jsx'),
+            require('@babel/plugin-syntax-object-rest-spread'),
             [ this._indexFile, transformOptions ]
         ];
     }

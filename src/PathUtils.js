@@ -11,9 +11,9 @@
  *
  */
 
-const t = require('babel-types');
-const template = require('babel-template');
-const { addNamed } = require('babel-helper-module-imports');
+const t = require('@babel/types');
+const template = require('@babel/template');
+const { addNamed } = require("@babel/helper-module-imports");
 
 module.exports = class PathUtils {
 

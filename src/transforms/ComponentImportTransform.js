@@ -12,7 +12,7 @@
  */
 
 const PathUtils = require('../PathUtils');
-const t = require('babel-types');
+const t = require('@babel/types');
 
 const IGNORED_COMPONENTS = new Set([ 'repeat', 'g', 'if', 'elseif', 'else', 'using', 'unless', 'svg', 'iframe', 'object', 'embed' ]);
 
